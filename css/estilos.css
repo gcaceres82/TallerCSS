@@ -60,28 +60,23 @@ img {
 .secundaria {
   margin: 0px;
   background: #d5c75f;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:center;
   align-items: space-around;
-
 }
 
 .secundaria>div {
   flex: 0 0;
-  -webkit-flex:0 0;
 }
 
 #izquierda {
   order: 1;
-  -webkit-order: 1;
 }
 
 #derecha {
   order: 2;
-  -webkit-order: 2;
 }
 
 .secundaria>div>a>figure>img {
@@ -147,4 +142,64 @@ img {
 }
 #columna4 {
   order: 4;
+}
+/*-----------------------------------------*/
+/*paisajes.html*/
+.paisajes {
+  margin: 0px;
+  background: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: space-around;
+}
+
+.paisajes>div {
+  margin-bottom: 15px
+}
+
+.paisajes>div>img {
+  flex: 1 1;
+  border: 1px black solid;
+  width: 250px;
+}
+
+.paisajes>div:first-child>img {
+  filter: blur(10px);
+}
+
+.paisajes>div:nth-child(3)>img {
+  filter: sepia(90%);
+}
+
+.paisajes>div:nth-child(even)>img {
+  filter: grayscale(100%);
+}
+
+#paisaje_01 {
+  order: 1;
+  margin-top: 15px;
+}
+
+#paisaje_02 {
+  order: 2;
+  margin-top: 15px;
+}
+
+#paisaje_03 {
+  order: 3;
+  margin-top: 15px;
+}
+
+#paisaje_04 {
+  order: 4;
+}
+
+#paisaje_05 {
+  order: 5;
+}
+
+#paisaje_06 {
+  order: 6;
 }
