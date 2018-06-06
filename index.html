@@ -2,23 +2,71 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="author" content="Giovanny Cáceres">
+    <meta name="viewport" content="width=device-width">
     <title>Web de Fotografia</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dancing+Script" />
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <header id="cabecera">
-
-        <h1>Comenzando con la Fotografía</h1>
+    <div class="contenido">
+      <header class="cabecera">
+        <strong>Comenzando con la Fotografía</strong>
         <nav>
-          <ul>
-            <li class="active"><a href="#">Inicio </a></li>
-            <li><a href="#">Paisajes </a></li>
-            <li><a href="#">Retratos </a></li>
-          </ul>
+          <a href="#" class="actual">Inicio</a>
+          <a href="html/paisajes.html">Paisajes</a>
+          <a href="html/retratos.html">Retratos</a>
         </nav>
-
-    </header>
+      </header>
+      <section>
+        <article class="principal">
+          <img id="Principal" src="img/zapatoca.jpg">
+        </article>
+        <article class="secundaria">
+          <div id="izquierda">
+            <a href="html/paisajes.html">
+              <figure>
+                <img src="img/izquierda.jpg">
+                <figcaption>Paisajes</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div id="derecha">
+            <a href="html/retratos.html">
+              <figure>
+                <img src="img/derecha.jpg">
+                <figcaption>Retratos</figcaption>
+              </figure>
+            </a>
+          </div>
+        </article>
+      </section>
+      <footer class="pie_de_pagina">
+        <div id="columna1">
+          <h2>Contacto</h2><br>
+          <a href="mailto:pruebas@gmail.com" >pruebas@gmail.com</a>
+          <br>Carrera 20# 50-30. Colombia <br> Teléfono:6345639
+        </div>
+        <div id="columna2">
+          <h2>Términos</h2><br>
+          Conoce nuestros términos y condiciones.
+        </div>
+        <div id="columna3">
+          <h2>Redes Sociales</h2><br>
+          Comparte en nuestras redes <br>
+          <img class="icons" src="img/facebook.svg">
+          Comenzando Fotografía <br>
+          <img class="icons" src="img/twitter.png">
+          Comenzando Fotografía <br>
+          <img class="icons" src="img/instagram.png">
+          Comenzando Fotografía <br>
+        </div>
+        <div id="columna4">
+          <h2>Derechos</h2><br>
+          ® Copyright - 2020
+        </div>
+      </footer>
+    </div>
 
   </body>
 </html>
