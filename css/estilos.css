@@ -1,8 +1,5 @@
 
-@font-face {
-  font-family: 'Dancing Script';
-  src: url('DancingScript-Regular.otf');
-}
+
 /*index.html*/
 body{
   font-family: "Dancing Script";
@@ -263,4 +260,129 @@ img {
 
 #retrato_06 {
   order: 6;
+}
+/*Estilos Responsive*/
+
+@media (max-width: 899px) {
+  .contenido {
+    margin: 0px;
+    width: 100%;
+  }
+
+  nav {
+    float: none;
+  }
+
+  #Principal {
+    width: 100%;
+  }
+
+  .secundaria {
+      flex-direction: column;
+  }
+
+  .secundaria>div {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .secundaria>div>a>figure>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+  }
+
+  .pie_de_pagina {
+      flex-direction: column;
+  }
+
+  .pie_de_pagina>div {
+    width: 100%;
+  }
+
+  #columna1 {
+    margin-bottom: 10px;
+  }
+
+  #columna2 {
+    margin-bottom: 10px;
+  }
+
+  #columna3 {
+    margin-bottom: 10px;
+  }
+
+  .pie_de_pagina>div {
+    max-width: 320px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* paisajes.html */
+  .paisajes {
+      flex-direction: column;
+  }
+
+  .paisajes>div {
+    width: 100%;
+  }
+
+  #paisaje_02 {
+    margin-top: 0px
+  }
+  #paisaje_03 {
+    margin-top: 0px
+  }
+  #paisaje_04 {
+    margin-bottom: 15px;
+  }
+  #paisaje_05 {
+    margin-bottom: 15px;
+  }
+  #paisaje_06 {
+    margin-bottom: 15px;
+  }
+
+  .paisajes>div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
+
+  /* rertratos.html **/
+  .retratos {
+      flex-direction: column;
+  }
+
+  .retratos>div {
+    width: 100%;
+  }
+
+  #retrato_02 {
+    margin-top: 0px
+  }
+  #retrato_03 {
+    margin-top: 0px
+  }
+  #retrato_04 {
+    margin-bottom: 15px;
+  }
+  #retrato_05 {
+    margin-bottom: 15px;
+  }
+  #retrato_06 {
+    margin-bottom: 15px;
+  }
+
+  .retratos>div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
 }
